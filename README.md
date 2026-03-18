@@ -4,6 +4,18 @@ Long-horizon embodied intelligence research repository.
 
 Chinese shorthand: `具身智能`
 
+## Portfolio Position
+
+Titan is now one of the two subprojects inside `Kinema`, Duckermind's umbrella
+program for embodied world models and physical AI.
+
+Inside Kinema:
+
+- `Titan` owns long-horizon embodied agency, world models, hardware framing,
+  and safety architecture
+- `Physis` owns simulator-first engineering across perception, control,
+  datasets, and runtime
+
 ## Stage
 
 Stage 0: research incubation and safety framing.
