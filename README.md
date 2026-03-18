@@ -1,42 +1,44 @@
-# Titan - Embodied Intelligence Research
+# Kinema - Embodied World Models And Physical AI
 
-Long-horizon embodied intelligence research repository.
+Open umbrella program for machine intelligence that has to sense, simulate,
+decide, and act in the physical world.
 
-Chinese shorthand: `具身智能`
+Chinese shorthand: `具身世界模型`
 
-## Portfolio Position
+## Position
 
-Titan is now one of the two subprojects inside `Kinema`, Duckermind's umbrella
-program for embodied world models and physical AI.
+Kinema consolidates Duckermind's embodied stack into one umbrella so the work
+is no longer split across disconnected MVPs.
 
-Inside Kinema:
+## Repository Host
 
-- `Titan` owns long-horizon embodied agency, world models, hardware framing,
-  and safety architecture
-- `Physis` owns simulator-first engineering across perception, control,
-  datasets, and runtime
+Kinema is now hosted directly in the original `titan` repository.
 
-## Stage
+The former standalone Titan repository content has been moved into
+`subprojects/titan/`, and the former standalone Physis repository content has
+been copied into `subprojects/physis/`.
 
-Stage 0: research incubation and safety framing.
+## Subprojects
 
-## Goals
+- `Titan`
+  - long-horizon embodied agency, world models, hardware framing, and safety
+- `Physis`
+  - simulator-first physical AI framework across perception, control, runtime,
+    and data
 
-- define the long-horizon architecture cleanly
-- keep safety central from the start
-- separate plausible near-term work from grand but unsupported claims
+## Why This Umbrella Exists
 
-## Structure
+- world models without a practical simulator and runtime stack stay abstract
+- simulator and robotics frameworks without a strong agency and safety thesis
+  stay shallow
+- one umbrella makes the research layer, framework layer, and future system
+  layer legible as one program
 
-- `hardware/`
-- `world_model/`
-- `decision/`
-- `safety/`
+## Local Structure
+
 - `docs/`
+- `subprojects/titan/`
+- `subprojects/physis/`
 
-## License And Provenance
-
-- This repository is licensed under `Apache-2.0`.
-- Safety-critical work should be especially conservative about third-party code, models, and datasets.
-- Open-source intent does not waive upstream license obligations.
-- See `THIRD_PARTY_CODE_POLICY.md`.
+The subprojects are now embedded directly in this repository so future cleanup
+of redundant MVP repositories does not orphan files.
